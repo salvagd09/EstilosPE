@@ -378,9 +378,6 @@ main {
   aside .espacio h3 {
     font-size: 1rem;
   }
-  main {
-    height: fit-content;
-  }
   .buscador {
     width: 100%;
     font-size: 0.85rem;
