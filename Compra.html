@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Estyles_compra.css" />
+    <title>Compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Kay+Pho+Du:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/95f1b4897f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="menu-btn"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <a class="Titulo" href="">Estilos<span>PE</span></a>
+      <div class="cuadro-busqueda">
+        <input placeholder="Realiza tu búsqueda aquí" class="buscador" />
+      </div>
+      <h2><a href="Mision_vision.html">Misión y Visión</a></h2>
+      <h2><a href="Nosotros.html">Nosotros</a></h2>
+      <h2><a href="">Iniciar sesión</a></h2>
+      <h2><a href="Registro.html">Registrate</a></h2>
+      <h2><a href="">Contáctanos</a></h2>
+      <a href="Compra.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <nav>
+        <!-- Este es el menú que sale del costado -->
+        <ul class="lista-desplegable">
+          <li>
+            <div class="ropa">
+              <i class="fa-solid fa-shirt"></i>
+              <h3><a href="Ventana_ProductoRopa.html">Ropa</a></h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <i class="fa-solid fa-glasses"></i>
+              <h3 href=""><a>Accesorios</a></h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <i class="fa-solid fa-shoe-prints"></i>
+              <h3><a href="">Calzado</a></h3>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="titulo-carrito">Mi carrito</h2>
+      <div class="Contenedor-carrito">
+        <!--Lista de productos (falta)-->
+        <div class="lista-producto">
+          <!--Productos-->
+          <div class="Item-producto">
+            <!--Imagen del producto, agregar al .css el diseño-->
+            <div class="Detalle-Producto">
+              <!--Poner el nombre del producto-->
+              <div class="Cantidad">
+                <button>-</button>
+                <input type="text" value="1" readonly />
+                <button>+</button>
+              </div>
+              <p><!--Poner el precio--></p>
+            </div>
+          </div>
+          <div class="Descuento">
+            <span style="font-size: 24px; margin-right: 10px">🏷️</span>
+            <span>Ingrese el código que obtuvo al registrarse</span>
+            <input
+              type="text"
+              placeholder="Codigo de descuento"
+              class="descuento-input"
+            />
+            <button class="descuento-boton">Verificar</button>
+          </div>
+        </div>
+        <div class="Resumen-Pedido">
+          <h3>Resumen del pedido</h3>
+          <p><!--Se carga todo el contenido refrente al producto--></p>
+          <p>
+            <!--Acá va calcular el envio-->
+            <a href="#">Calcular envío aquí</a>
+          </p>
+          <button>Finalizar compra</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Correo </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Equipo </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Contacto </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Video </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Sobre Nosotros </a>
+        </li>
+      </ul>
+      <p class="text">2025@Año | Todos los derechos reservados</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

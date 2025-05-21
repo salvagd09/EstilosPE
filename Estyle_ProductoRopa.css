@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+i {
+  font-size: 30px;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  background-color: #64a6e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+  padding: 10px;
+  color: #031926;
+}
+
+header div,
+header h3 {
+  padding: 0 15px;
+}
+
+header h2 a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  color: #031926;
+  transition: background-color 0.5s;
+}
+
+label i {
+  color: #ee1d52;
+  padding: 10px;
+}
+
+.buscador {
+  border: none;
+  background-image: url("Imagenes/lupa.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.menu-btn,
+.Titulo {
+  background-color: transparent;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+
+.Titulo {
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: "Kaushan script", sans-serif;
+}
+
+.menu-btn:hover,
+.Titulo:hover,
+header h2 a:hover,
+.fa-cart-shopping:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #9debeb;
+  span:hover {
+    color: #ee1d52;
+  }
+}
+
+.fa-cart-shopping {
+  padding: 10px;
+  color: #77aca2;
+  transition: background-color 0.4s ease-out;
+}
+
+/* Menú lateral */
+nav {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  height: fit-content;
+  width: 200px;
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+  z-index: 10;
+  border-right: 2px solid #00afb9;
+}
+
+#menu-toggle:checked ~ nav {
+  transform: translateX(0);
+}
+
+nav h3 a {
+  text-decoration: none;
+  color: #031926;
+}
+
+nav ul li {
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  line-height: 3.5;
+  padding: 0 20px;
+  transition: background-color 0.4s ease-out;
+  border-bottom: 2px solid #00afb9;
+}
+
+nav ul li div:hover {
+  background: #468189;
+  color: white;
+}
+
+nav ul li div a:hover {
+  color: white;
+}
+main {
+  height: 75%;
+}
+main section {
+  width: 85%;
+  float: left;
+  height: 100%;
+}
+main section h2 {
+  color: gray;
+  font-size: 20px;
+}
+/*El efecto es en el boton que directamente es inferior a la etiqueta section*/
+main section > button {
+  margin: 0 50%;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 20px;
+  border: 2px solid #353535;
+  border-radius: 10px;
+  background-color: #ee1d52;
+  opacity: 0.75;
+}
+/*El efecto es en el boton que directamente es inferior a la etiqueta section cuando
+le pasas el mouse.*/
+main section > button:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px #353535;
+}
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #dce1de;
+  width: 20%;
+  height: fit-content;
+  min-height: 15%;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0 10px 10px 10px;
+}
+.Tarjeta img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-top: 5px;
+}
+.Tarjeta h2 {
+  font-family: "Ka Pho Du", sans-serif;
+  margin: 5px 0;
+  font-size: 25px;
+}
+.Tarjeta h3 {
+  font-family: "Archivo", sans-serif;
+  margin: 5px 0;
+  font-size: 20px;
+}
+.Tarjeta:has(.botones button:hover) {
+  transition: all 0.5s;
+  box-shadow: 0 0 10px #031926;
+  h2 {
+    color: #77aca2;
+  }
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.botones button {
+  width: 45%;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f4e9cd;
+  border: none;
+  border-radius: 5px;
+}
+.botones button a {
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: #031926;
+}
+main aside {
+  width: 15%;
+  border: 2px solid #00afb9;
+  float: right;
+  height: auto;
+}
+main aside h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Kay Pho Du";
+  border-bottom: 2px solid #0077b5;
+  margin: 5px 0;
+}
+.Precio1 {
+  color: #9debeb;
+}
+.Precio2 {
+  color: #ee1d52;
+}
+main aside .seleccionables {
+  display: flex;
+  margin: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+main aside .seleccionables .boton {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main aside .seleccionables .boton input {
+  transform: scale(1.5);
+  margin: 0 5px;
+}
+main aside .seleccionables .boton input:hover + label {
+  color: #468189;
+}
+.espacio {
+  margin: 20px 0;
+}
+main aside .seleccionables .boton label {
+  font-size: 20px;
+  color: #feda77;
+}
+main aside h2 {
+  text-align: center;
+  font-family: "Kaushan script";
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #286bcf;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Si tienes un contenedor principal */
+main {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header h2 a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header h3,
+  aside .espacio h3 {
+    font-size: 1rem;
+  }
+  main {
+    height: fit-content;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .cuadro-busqueda {
+    width: 50%;
+  }
+  .Titulo {
+    width: 25%;
+    font-size: 2rem;
+    height: fit-content;
+  }
+  nav {
+    top: 18%;
+    width: 100%;
+  }
+  nav div {
+    justify-content: center;
+  }
+  main section {
+    width: 70%;
+  }
+  main aside {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  main section > button {
+    font-size: 0.8rem;
+    padding: 0 10px;
+    margin: 4px 50%;
+  }
+  aside h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  main {
+    height: fit-content;
+  }
+  .espacio {
+    width: 100%;
+    margin: 2px 0;
+  }
+  main aside .seleccionables .boton label {
+    font-size: 1.2rem;
+    color: #77aca2;
+  }
+  .tarjetas {
+    flex-wrap: wrap;
+  }
+  .Tarjeta {
+    width: 25%;
+  }
+  .Tarjeta h2,
+  main section > h2 {
+    font-size: 1rem;
+  }
+  .Tarjeta h3,
+  aside h3 {
+    font-size: 0.8rem;
+  }
+  .Tarjeta .botones {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Tarjeta .botones button {
+    width: 100%;
+  }
+  .Precio1 {
+    color: #031926;
+  }
+  .botones button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  .footer {
+    padding: 5px;
+    height: auto;
+  }
+  .footer .icon,
+  .menu-icon,
+  .text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  nav {
+    top: 16%;
+    background-color: #feda77;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+  .Titulo {
+    font-size: 2rem;
+  }
+  .Tarjeta {
+    width: 35%;
+  }
+  .footer {
+    padding: 8px;
+  }
+}
