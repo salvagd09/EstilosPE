@@ -8,7 +8,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 body {
@@ -264,7 +264,7 @@ main aside .seleccionables {
 }
 main aside .seleccionables .boton {
   display: flex;
-  width: 100%;
+  width: 45%;
   justify-content: center;
   align-items: center;
 }
@@ -428,8 +428,11 @@ main {
     width: 100%;
     margin: 2px 0;
   }
+  main aside .seleccionables .boton {
+    width: 100%;
+  }
   main aside .seleccionables .boton label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #77aca2;
   }
   .tarjetas {
@@ -445,6 +448,9 @@ main {
   .Tarjeta h3,
   aside h3 {
     font-size: 0.8rem;
+  }
+  .fa-cart-shopping {
+    color: white;
   }
   .Tarjeta .botones {
     width: 100%;
@@ -469,6 +475,10 @@ main {
   .text {
     font-size: 1rem;
   }
+  .text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 480px) {
   html {
@@ -478,23 +488,23 @@ main {
     flex-wrap: wrap;
     height: fit-content;
   }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
   .buscador {
     width: 100%;
     font-size: 0.75rem;
     margin: 10px auto;
     padding: 10px 20px;
   }
-  header i,
-  header h2 a {
-    font-size: 1.2rem;
-  }
   nav {
     top: 16%;
     background-color: #feda77;
-  }
-  header h3 a {
-    font-size: 1rem;
-    color: #468189;
   }
   .fa-cart-shopping {
     color: white;
