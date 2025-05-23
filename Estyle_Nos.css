@@ -155,21 +155,20 @@ main {
 }
 
 .nosotros {
-  background-color: #93C6B8;
+  background-color: #93c6b8;
   padding: 30px;
   border-radius: 10px;
   max-width: 800px;
   text-align: justify;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      font-family: system-ui;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: system-ui;
 }
 
 .nosotros h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #05263B;
+  color: #05263b;
 }
-
 
 /* Footer */
 .footer {
@@ -246,4 +245,93 @@ main {
 /* Si tienes un contenedor principal */
 main {
   flex: 1;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header h2 a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header h3,
+  aside .espacio h3 {
+    font-size: 1rem;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+  .Titulo {
+    width: 25%;
+    font-size: 2rem;
+    height: fit-content;
+  }
+  .cuadro-busqueda {
+    width: 50%;
+  }
+  nav {
+    top: 21%;
+    width: 100%;
+  }
+  nav div {
+    justify-content: center;
+  }
+  .footer {
+    padding: 5px;
+    height: auto;
+  }
+  .footer .icon,
+  .menu-icon,
+  .text {
+    font-size: 1rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  nav {
+    top: 20%;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .Titulo {
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 8px;
+  }
 }

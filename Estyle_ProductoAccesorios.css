@@ -187,7 +187,7 @@ main section h2 {
 }
 .Tarjeta:has(.botones button:hover) {
   transition: all 0.5s;
-  box-shadow: 0 0 10px #031926;
+  box-shadow: 0 0 10px gold;
   h2 {
     color: #77aca2;
   }
@@ -387,13 +387,13 @@ main {
   .cuadro-busqueda {
     width: 50%;
   }
-  .menu-btn {
-    font-size: 1.5rem;
-  }
   .Titulo {
     width: 25%;
     font-size: 2rem;
     height: fit-content;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
   }
   nav {
     top: 21%;

@@ -145,9 +145,6 @@ nav ul li div a:hover {
 
 /*main*/
 
-
-
-
 .form-grid {
   display: flex;
   flex-wrap: wrap;
@@ -157,7 +154,7 @@ nav ul li div a:hover {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .campo {
@@ -176,7 +173,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, select {
+input,
+select {
   padding: 8px;
   font-size: 1em;
   border: 1px solid #ccc;
@@ -202,9 +200,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #555;
 }
-
-
-
 
 /* Footer */
 .footer {
@@ -283,3 +278,92 @@ main {
   flex: 1;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header h2 a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header h3,
+  aside .espacio h3 {
+    font-size: 1rem;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+  .Titulo {
+    width: 25%;
+    font-size: 2rem;
+    height: fit-content;
+  }
+  .cuadro-busqueda {
+    width: 50%;
+  }
+  nav {
+    top: 21%;
+    width: 100%;
+  }
+  nav div {
+    justify-content: center;
+  }
+  .footer {
+    padding: 5px;
+    height: auto;
+  }
+  .footer .icon,
+  .menu-icon,
+  .text {
+    font-size: 1rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  nav {
+    top: 20%;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .Titulo {
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 8px;
+  }
+}

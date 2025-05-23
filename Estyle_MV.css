@@ -146,42 +146,42 @@ nav ul li div a:hover {
 /*main*/
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color:#3e8fd8;
-    padding: 50px;
-          font-family: system-ui;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #3e8fd8;
+  padding: 50px;
+  font-family: system-ui;
 }
 
 .box {
-    flex: 1 1 45%;
-    padding: 20px;
+  flex: 1 1 45%;
+  padding: 20px;
 }
 
 .mision {
-    background-color: #77aca2;
-    border-radius: 10px;
-    margin-right: 10px;
+  background-color: #77aca2;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 .vision {
-    background-color: #77aca2;
-    border-radius: 10px;
-    margin-left: 10px;
+  background-color: #77aca2;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .box h2 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
-    nav ul li div:hover {
-      background: #468189;
-      color: white;
-    }
-    nav ul li div a:hover {
-      color: white;
-    }
+nav ul li div:hover {
+  background: #468189;
+  color: white;
+}
+nav ul li div a:hover {
+  color: white;
+}
 
 /* Footer */
 .footer {
@@ -258,4 +258,93 @@ nav ul li div a:hover {
 /* Si tienes un contenedor principal */
 main {
   flex: 1;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header h2 a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header h3,
+  aside .espacio h3 {
+    font-size: 1rem;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+  .Titulo {
+    width: 25%;
+    font-size: 2rem;
+    height: fit-content;
+  }
+  .cuadro-busqueda {
+    width: 50%;
+  }
+  nav {
+    top: 21%;
+    width: 100%;
+  }
+  nav div {
+    justify-content: center;
+  }
+  .footer {
+    padding: 5px;
+    height: auto;
+  }
+  .footer .icon,
+  .menu-icon,
+  .text {
+    font-size: 1rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  nav {
+    top: 20%;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .Titulo {
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 8px;
+  }
 }
