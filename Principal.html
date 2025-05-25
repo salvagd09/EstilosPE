@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Estyle_Registro.css" />
-    <title>Compra</title>
+    <link rel="stylesheet" href="EstilosPrincipal.css" />
+    <title>EstilosP_Principal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,78 +62,75 @@
     </header>
 
     <main>
-      <section id="registro" class="pestana activa">
-        <form class="form-grid">
-          <div class="campo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoP">Apellido Paterno:</label>
-            <input type="text" id="apellidoP" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoM">Apellido Materno:</label>
-            <input type="text" id="apellidoM" required />
-          </div>
-          <div class="campo">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="campo">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" required />
-          </div>
-          <div class="campo">
-            <label for="confirmar">Confirmar contraseña:</label>
-            <input type="password" id="confirmar" required />
-          </div>
-          <div class="campo">
-            <label for="tipoDocumento">Tipo de documento:</label>
-            <select id="tipoDocumento" required>
-              <option value="">Selecciona</option>
-              <option value="cc">Cédula</option>
-              <option value="ti">Tarjeta</option>
-              <option value="pp">Pasaporte</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="numeroDocumento">N° de documento:</label>
-            <input type="text" id="numeroDocumento" required />
-          </div>
-          <div class="campo">
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" required />
-          </div>
-          <div class="campo">
-            <label for="celular">Número de celular:</label>
-            <input type="tel" id="celular" pattern="[0-9]{10}" required />
-          </div>
-          <div class="campo">
-            <label for="departamento">Departamento:</label>
-            <select id="departamento" required>
-              <option value="">Selecciona</option>
-              <option value="antioquia">Antioquia</option>
-              <option value="cundinamarca">Cundinamarca</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="genero">Género:</label>
-            <div class="genero-opciones">
-              <label
-                ><input type="radio" name="genero" value="hombre" required />
-                Hombre</label
-              >
-              <label
-                ><input type="radio" name="genero" value="mujer" required />
-                Mujer</label
-              >
+      <section class="banner-principal">
+        <h1>Estilos PE</h1>
+        <h2>Ropa buena en estilo y para el bolsillo</h2>
+      </section>
+      <section class="promo-section">
+        <h2>ROPA, ACCESORIOS Y CALZADO</h2>
+        <p>ENVIOS GRATIS CON COMPRAS SUPERIORES A S/.89.99</p>
+        <div class="slider-clientes">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="Imagenes/imagen1.jpg" alt="Cliente 1" />
+            </div>
+            <div class="slide">
+              <img src="Imagenes/imagen2.jpg" alt="Cliente 2" />
+            </div>
+            <div class="slide">
+              <img src="Imagenes/imagen3.jpg" alt="Cliente 3" />
+            </div>
+
+            <!-- Repite para efecto continuo -->
+            <div class="slide">
+              <img src="Imagenes/imagen1.jpg" alt="Cliente 1" />
+            </div>
+            <div class="slide">
+              <img src="Imagenes/imagen2.jpg" alt="Cliente 2" />
+            </div>
+            <div class="slide">
+              <img src="Imagenes/imagen3.jpg" alt="Cliente 3" />
             </div>
           </div>
-          <div class="campo campo-full">
-            <button type="submit">Registrarse</button>
+        </div>
+      </section>
+
+      <section class="testimonios">
+        <h2>Comentarios Destacados:</h2>
+        <div class="comentarios">
+          <div class="comentario">
+            <h3>“Excelente Servicio”</h3>
+            <p>
+              <strong>Marcos Aurelio</strong><br /><span
+                >Buen servicio de entrega</span
+              >
+            </p>
           </div>
-        </form>
+          <div class="comentario">
+            <h3>“Materiales de calidad”</h3>
+            <p>
+              <strong>Paula Malaga</strong><br /><span
+                >Los materiales son de buena calidad. Me gustó mucho.</span
+              >
+            </p>
+          </div>
+          <div class="comentario">
+            <h3>“Rápido y Fácil”</h3>
+            <p>
+              <strong>Mario Vargas</strong><br /><span
+                >Mi pedido llegó súper rápido</span
+              >
+            </p>
+          </div>
+          <div class="comentario">
+            <h3>“Variedad de Productos”</h3>
+            <p>
+              <strong>Laura Cruz</strong><br /><span
+                >Encontré una variedad de productos. Me encanta.</span
+              >
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -172,9 +169,14 @@
         <li class="menu-elem">
           <a href="" class="menu-icon"> Equipo </a>
         </li>
-
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Contacto </a>
+        </li>
         <li class="menu-elem">
           <a href="" class="menu-icon"> Video </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Sobre Nosotros </a>
         </li>
       </ul>
       <p class="text">2025@Año | Todos los derechos reservados</p>

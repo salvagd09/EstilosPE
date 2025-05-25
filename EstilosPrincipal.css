@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+i {
+  font-size: 30px;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  background-color: #64a6e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+  padding: 10px;
+  color: #031926;
+}
+
+header div,
+header h3 {
+  padding: 0 15px;
+}
+
+header h2 a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  color: #031926;
+  transition: background-color 0.5s;
+}
+
+label i {
+  color: #ee1d52;
+  padding: 10px;
+}
+
+.buscador {
+  border: none;
+  background-image: url("Imagenes/lupa.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.menu-btn,
+.Titulo {
+  background-color: transparent;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+
+.Titulo {
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: "Kaushan script", sans-serif;
+}
+
+.menu-btn:hover,
+.Titulo:hover,
+header h2 a:hover,
+.fa-cart-shopping:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #9debeb;
+  span:hover {
+    color: #ee1d52;
+  }
+}
+
+.fa-cart-shopping {
+  padding: 10px;
+  color: #77aca2;
+  transition: background-color 0.4s ease-out;
+}
+
+/* Menú lateral */
+nav {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  height: fit-content;
+  width: 200px;
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+  z-index: 10;
+  border-right: 2px solid #00afb9;
+}
+
+#menu-toggle:checked ~ nav {
+  transform: translateX(0);
+}
+
+nav h3 a {
+  text-decoration: none;
+  color: #031926;
+}
+
+nav ul li {
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  line-height: 3.5;
+  padding: 0 20px;
+  transition: background-color 0.4s ease-out;
+  border-bottom: 2px solid #00afb9;
+}
+
+nav ul li div:hover {
+  background: #468189;
+  color: white;
+}
+
+nav ul li div a:hover {
+  color: white;
+}
+/* MAIN*/
+main {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #031926;
+}
+/* Banner Principal */
+.banner-principal {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-image: url("Imagenes/Persona_comprando_feliz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner-principal h1,
+p {
+  margin-left: 20px;
+}
+.banner-principal h1 {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 50px;
+}
+.banner-principal p {
+  font-family: "Archivo", sans-serif;
+  font-family: 30px;
+}
+.banner-principal img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+.imagenes-clientes img {
+  width: auto;
+  height: 120px; /* o el alto que prefieras */
+  object-fit: contain;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes-clientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.slider-clientes {
+  overflow: hidden;
+  position: relative;
+  height: 140px;
+  margin-bottom: 30px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(300px * 6); /* 6 slides (3 reales + 3 repetidos) */
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  height: 120px;
+  width: auto;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+/* Animación */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-900px); /* 300px * 3 */
+  }
+}
+
+/* Sección Promocional */
+.promo-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.promo-section h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.promo-section p {
+  font-size: 14px;
+  color: #e91212;
+  margin-bottom: 20px;
+}
+
+.promo-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.promo-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sección de Comentarios */
+.testimonios {
+  background-color: #f8c963;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.testimonios h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.comentarios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comentario {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comentario h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.comentario p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #286bcf;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Si tienes un contenedor principal */
+main {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header h2 a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header h3,
+  aside .espacio h3 {
+    font-size: 1rem;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .cuadro-busqueda {
+    width: 50%;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+  .Titulo {
+    width: 25%;
+    font-size: 2rem;
+    height: fit-content;
+  }
+  nav {
+    top: 21%;
+    width: 100%;
+  }
+  nav div {
+    justify-content: center;
+  }
+  main section > button {
+    font-size: 0.8rem;
+  }
+  main aside {
+    width: 20%;
+  }
+  aside h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .espacio {
+    width: 100%;
+    margin: 2px 0;
+  }
+  .filtros .seleccionables .boton label {
+    font-size: 0.9rem;
+    color: #77aca2;
+  }
+  .filtros .seleccionables .boton {
+    width: 100%;
+    justify-content: unset;
+  }
+  .filtros .seleccionables .boton input {
+    transform: scale(1);
+  }
+  .tarjetas {
+    flex-wrap: wrap;
+  }
+  .Tarjeta h2,
+  main section > h2 {
+    font-size: 1rem;
+  }
+  .Tarjeta h3,
+  aside h3 {
+    font-size: 0.8rem;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .Tarjeta .botones {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Tarjeta .botones button {
+    width: 100%;
+  }
+  .anuncio img {
+    height: 50px;
+  }
+  .Precio1 {
+    color: #031926;
+  }
+  .botones button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  .footer {
+    padding: 5px;
+    height: auto;
+  }
+  .footer .icon,
+  .menu-icon,
+  .text {
+    font-size: 1rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  header i,
+  header h2 a {
+    font-size: 1.2rem;
+  }
+  header h3 a {
+    font-size: 1rem;
+    color: #468189;
+  }
+  .buscador {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  nav {
+    top: 20%;
+  }
+  .fa-cart-shopping {
+    color: white;
+  }
+  .filtros .seleccionables {
+    gap: 8px;
+  }
+  .Titulo {
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 8px;
+  }
+}
