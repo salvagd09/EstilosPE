@@ -148,6 +148,7 @@ main {
   font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #031926;
+  flex: 1;
 }
 /* Banner Principal */
 .banner-principal {
@@ -374,11 +375,6 @@ p {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
-/* Si tienes un contenedor principal */
-main {
-  flex: 1;
-}
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -522,8 +518,5 @@ main {
   }
   .Titulo {
     font-size: 2rem;
-  }
-  .footer {
-    padding: 8px;
   }
 }

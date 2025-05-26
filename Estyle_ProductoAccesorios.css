@@ -142,6 +142,11 @@ nav ul li div:hover {
 nav ul li div a:hover {
   color: white;
 }
+/*Main*/
+/* Si tienes un contenedor principal */
+main {
+  flex: 1;
+}
 main section {
   width: 75%;
   float: left;
@@ -295,6 +300,7 @@ main aside {
   height: 350px;
   margin: 10px 0;
 }
+/*Footer*/
 .footer {
   position: relative;
   width: 100%;
@@ -357,10 +363,6 @@ main aside {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 20px;
-}
-/* Si tienes un contenedor principal */
-main {
-  flex: 1;
 }
 @media (max-width: 768px) {
   html {

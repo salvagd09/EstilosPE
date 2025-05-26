@@ -142,6 +142,10 @@ nav ul li div:hover {
 nav ul li div a:hover {
   color: white;
 }
+/*Main */
+main {
+  flex: 1;
+}
 main section {
   width: 75%;
   float: left;
@@ -357,10 +361,6 @@ main aside {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 20px;
-}
-/* Si tienes un contenedor principal */
-main {
-  flex: 1;
 }
 @media (max-width: 768px) {
   html {

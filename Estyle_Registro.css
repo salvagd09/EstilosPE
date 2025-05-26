@@ -144,7 +144,9 @@ nav ul li div a:hover {
 }
 
 /*main*/
-
+main {
+  flex: 1;
+}
 .form-grid {
   display: flex;
   flex-wrap: wrap;
@@ -156,23 +158,19 @@ nav ul li div a:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .campo {
   flex: 1 1 calc(50% - 20px);
   display: flex;
   flex-direction: column;
 }
-
 .campo-full {
   flex: 1 1 100%;
   text-align: center;
 }
-
 label {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 input,
 select {
   padding: 8px;
@@ -180,13 +178,11 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .genero-opciones {
   display: flex;
   gap: 15px;
   margin-top: 5px;
 }
-
 button[type="submit"] {
   background-color: #333;
   color: white;
@@ -196,11 +192,9 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
-
 button[type="submit"]:hover {
   background-color: #555;
 }
-
 /* Footer */
 .footer {
   position: relative;
@@ -271,11 +265,6 @@ button[type="submit"]:hover {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 20px;
-}
-
-/* Si tienes un contenedor principal */
-main {
-  flex: 1;
 }
 
 @media (max-width: 768px) {
@@ -362,8 +351,5 @@ main {
   }
   .Titulo {
     font-size: 2rem;
-  }
-  .footer {
-    padding: 8px;
   }
 }
