@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Estyle_MV.css" />
-    <title>Mision_Vision_EstilosPe</title>
+    <link
+      href="/TODO EL PROYECTO WEB/ArchivosCSS/Estyle_Registro.css"
+      rel="stylesheet"
+    />
+    <title>Compra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,35 +64,90 @@
       </nav>
     </header>
 
-    <main class="content">
-      <div class="box mision">
-        <h2>Misión</h2>
-        <p class="resaltado">
-          Nuestro propósito es ser la marca líder de ropa, calzado y accesorios
-          de calidad en el Perú ofreciendo estos productos tanto a niños como a
-          mujeres y adultos de todas las tallas. Queremos lograr que la
-          población peruana que habita en las 3 regiones del país sea capaz de
-          tener ropa a buenos precios, de buena calidad y que puedan obtenerla
-          de forma rápida y fácil tanto de forma física como virtual.
-        </p>
-      </div>
-      <div class="box vision">
-        <h2>Visión</h2>
-        <p>
-          Nuestra visión es convertirnos en una empresa líder en el comercio
-          electrónico a nivel nacional, siendo reconocidos por brindar una
-          plataforma innovadora, confiable y de fácil acceso para todos los
-          peruanos. Aspiramos a ser mucho más que una tienda virtual: queremos
-          ser una marca cercana a nuestros clientes, que entienda sus
-          necesidades, que se adapte a las nuevas tecnologías y que evolucione
-          constantemente para ofrecer siempre lo mejor. <br /><br />
-          Imaginamos un futuro donde cualquier región no solo sea un punto de
-          venta, sino también una fuente de producción, sin una barrera
-          geográfica que limite nuestras operaciones. Queremos formar parte del
-          bienestar de todos.
-        </p>
-      </div>
+    <main>
+      <section id="registro" class="pestana activa">
+        <form class="form-grid">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+          </div>
+          <div class="campo">
+            <label for="apellidoP">Apellido Paterno:</label>
+            <input type="text" id="apellidoP" required />
+          </div>
+          <div class="campo">
+            <label for="apellidoM">Apellido Materno:</label>
+            <input type="text" id="apellidoM" required />
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="campo">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required />
+          </div>
+          <div class="campo">
+            <label for="confirmar">Confirmar contraseña:</label>
+            <input type="password" id="confirmar" required />
+          </div>
+          <div class="campo">
+            <label for="tipoDocumento">Tipo de documento:</label>
+            <select id="tipoDocumento" required>
+              <option value="">Selecciona</option>
+              <option value="cc">Cédula</option>
+              <option value="ti">Tarjeta</option>
+              <option value="pp">Pasaporte</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="numeroDocumento">N° de documento:</label>
+            <input type="text" id="numeroDocumento" required />
+          </div>
+          <div class="campo">
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" required />
+          </div>
+          <div class="campo">
+            <label for="celular">Número de celular:</label>
+            <input type="tel" id="celular" pattern="[0-9]{10}" required />
+          </div>
+          <div class="campo">
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" required>
+              <option value="">Selecciona</option>
+              <option value="antioquia">Antioquia</option>
+              <option value="cundinamarca">Cundinamarca</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="genero">Género:</label>
+            <div class="genero-opciones">
+              <label
+                ><input
+                  type="radio"
+                  name="genero"
+                  value="hombre"
+                  required
+                />Hombre</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="genero"
+                  value="mujer"
+                  required
+                />Mujer</label
+              >
+            </div>
+          </div>
+          <div class="campo campo-full">
+            <button type="submit">Registrarse</button>
+          </div>
+        </form>
+      </section>
     </main>
+
     <footer class="footer">
       <ul class="social-icon">
         <li class="icon-elem">
@@ -125,14 +183,9 @@
         <li class="menu-elem">
           <a href="" class="menu-icon"> Equipo </a>
         </li>
-        <li class="menu-elem">
-          <a href="" class="menu-icon"> Contacto </a>
-        </li>
+
         <li class="menu-elem">
           <a href="" class="menu-icon"> Video </a>
-        </li>
-        <li class="menu-elem">
-          <a href="" class="menu-icon"> Sobre Nosotros </a>
         </li>
       </ul>
       <p class="text">2025@Año | Todos los derechos reservados</p>

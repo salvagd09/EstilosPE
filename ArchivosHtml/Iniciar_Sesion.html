@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Estyle_Registro.css" />
-    <title>Compra</title>
+    <title>Iniciar Sesion</title>
+    <link
+      href="/TODO EL PROYECTO WEB/ArchivosCSS/Iniciar_Sesion.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,11 +36,8 @@
       <h2><a href="Iniciar_Sesion.html">Iniciar sesión</a></h2>
       <h2><a href="Registro.html">Registrate</a></h2>
       <h2><a href="contactanos.html">Contáctanos</a></h2>
-      <a href="Compra.html">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </a>
+      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
       <nav>
-        <!-- Este es el menú que sale del costado -->
         <ul class="lista-desplegable">
           <li>
             <div class="ropa">
@@ -48,7 +48,7 @@
           <li>
             <div>
               <i class="fa-solid fa-glasses"></i>
-              <h3 href="Ventana_ProductoAccesorios.html"><a>Accesorios</a></h3>
+              <h3><a href="Ventana_ProductoAccesorios.html">Accesorios</a></h3>
             </div>
           </li>
           <li>
@@ -61,90 +61,27 @@
       </nav>
     </header>
 
+    <!-- Contenedor para centrar el formulario sin afectar el header -->
     <main>
-      <section id="registro" class="pestana activa">
-        <form class="form-grid">
-          <div class="campo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoP">Apellido Paterno:</label>
-            <input type="text" id="apellidoP" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoM">Apellido Materno:</label>
-            <input type="text" id="apellidoM" required />
-          </div>
-          <div class="campo">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="campo">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" required />
-          </div>
-          <div class="campo">
-            <label for="confirmar">Confirmar contraseña:</label>
-            <input type="password" id="confirmar" required />
-          </div>
-          <div class="campo">
-            <label for="tipoDocumento">Tipo de documento:</label>
-            <select id="tipoDocumento" required>
-              <option value="">Selecciona</option>
-              <option value="cc">Cédula</option>
-              <option value="ti">Tarjeta</option>
-              <option value="pp">Pasaporte</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="numeroDocumento">N° de documento:</label>
-            <input type="text" id="numeroDocumento" required />
-          </div>
-          <div class="campo">
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" required />
-          </div>
-          <div class="campo">
-            <label for="celular">Número de celular:</label>
-            <input type="tel" id="celular" pattern="[0-9]{10}" required />
-          </div>
-          <div class="campo">
-            <label for="departamento">Departamento:</label>
-            <select id="departamento" required>
-              <option value="">Selecciona</option>
-              <option value="antioquia">Antioquia</option>
-              <option value="cundinamarca">Cundinamarca</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="genero">Género:</label>
-            <div class="genero-opciones">
-              <label
-                ><input
-                  type="radio"
-                  name="genero"
-                  value="hombre"
-                  required
-                />Hombre</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="genero"
-                  value="mujer"
-                  required
-                />Mujer</label
-              >
-            </div>
-          </div>
-          <div class="campo campo-full">
-            <button type="submit">Registrarse</button>
-          </div>
-        </form>
-      </section>
-    </main>
+      <div class="form-container">
+        <form>
+          <h2>Login</h2>
 
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+
+          <div class="remember">
+            <p>Recordar</p>
+            <p>Olvide contraseña</p>
+          </div>
+
+          <input type="submit" class="btn-1" value="Iniciar" />
+        </form>
+      </div>
+    </main>
     <footer class="footer">
       <ul class="social-icon">
         <li class="icon-elem">
@@ -180,9 +117,14 @@
         <li class="menu-elem">
           <a href="" class="menu-icon"> Equipo </a>
         </li>
-
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Contacto </a>
+        </li>
         <li class="menu-elem">
           <a href="" class="menu-icon"> Video </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Sobre Nosotros </a>
         </li>
       </ul>
       <p class="text">2025@Año | Todos los derechos reservados</p>
