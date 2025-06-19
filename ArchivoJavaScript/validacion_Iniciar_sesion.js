@@ -6,6 +6,5 @@ function validarLogin() {
     alert("Por favor, completa todos los campos.");
     return false;
   }
-
   return true;
 }

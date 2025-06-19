@@ -54,7 +54,7 @@ label i {
 
 .buscador {
   border: none;
-  background-image: url("Imagenes/lupa.jpg");
+  background-image: url("../Imagenes/lupa.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 20px 20px;

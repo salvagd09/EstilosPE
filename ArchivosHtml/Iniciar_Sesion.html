@@ -64,7 +64,11 @@
     <!-- Contenedor para centrar el formulario sin afectar el header -->
     <main>
       <div class="form-container">
-        <form>
+        <form
+          action="../Archivosphp/conexIniciar_Sesion.php"
+          method="POST"
+          onsubmit="return validarLogin();"
+        >
           <h2>Login</h2>
 
           <label for="username">Username</label>

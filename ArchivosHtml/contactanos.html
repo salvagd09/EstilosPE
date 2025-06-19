@@ -64,7 +64,7 @@
       <section>
         <div class="formulario">
           <h2>Contáctanos</h2>
-          <form>
+          <form id="formulario-contacto" action="../Archivosphp/conexContactanos.php" method="POST" onsubmit="return validacionContactanos();">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" />
 
@@ -133,6 +133,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../ArchivoJavaScript/validacionContactanos.js"></script>
     </footer>
   </body>
 </html>
