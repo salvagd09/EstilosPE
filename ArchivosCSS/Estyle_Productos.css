@@ -51,7 +51,10 @@ label i {
   color: #ee1d52;
   padding: 10px;
 }
-
+#oculto,
+.ocultado {
+  display: none;
+}
 .buscador {
   border: none;
   background-image: url("../Imagenes/lupa.jpg");

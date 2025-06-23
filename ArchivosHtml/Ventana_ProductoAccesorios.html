@@ -67,8 +67,8 @@
       <section>
         <h2>Inicio>Menú>Accesorios</h2>
         <div class="tarjetas">
-          <div class="Tarjeta">
-            <img src="/TODO EL PROYECTO WEB/Imagenes/Bolso_mujer_mediano.png" alt="Bolsa negro mujer" />
+          <div class="Tarjeta mujer negro cartera">
+            <img src="../Imagenes/Bolso_mujer_mediano.png" alt="Bolsa negro mujer" />
             <h2>Bolso negro para mujer</h2>
             <h3>Precio:<span class="Precio1">S/95.9</span></h3>
             <h3>
@@ -81,8 +81,8 @@
               <button><a href="Compra.html">Comprar</a></button>
             </div>
           </div>
-          <div class="Tarjeta">
-            <img src="/TODO EL PROYECTO WEB/Imagenes/Bufanda_beige.png" alt="Bufanda beige" />
+          <div class="Tarjeta mujer beige bufanda">
+            <img src="../Imagenes/Bufanda_beige.png" alt="Bufanda beige" />
             <h2>Bufanda color beige</h2>
             <h3>Precio:<span class="Precio1">S/100</span></h3>
             <h3>
@@ -95,9 +95,9 @@
               <button><a href="Compra.html">Comprar</a></button>
             </div>
           </div>
-          <div class="Tarjeta">
+          <div class="Tarjeta mujer marron">
             <img
-              src="/TODO EL PROYECTO WEB/Imagenes/Correa_2.png"
+              src="../Imagenes/Correa_2.png"
               alt="Correa para mujer"
             />
             <h2>Correa de color marron para mujer</h2>
@@ -112,9 +112,9 @@
               <button><a href="Compra.html">Comprar</a></button>
             </div>
           </div>
-          <div class="Tarjeta">
+          <div class="Tarjeta hombre correa negro">
             <img
-              src="/TODO EL PROYECTO WEB/Imagenes/Correa.png"
+              src="../Imagenes/Correa.png"
               alt="Correa negra"
             />
             <h2>Correa de cuero negra para hombre</h2>
@@ -129,8 +129,8 @@
               <button><a href="Compra.html">Comprar</a></button>
             </div>
           </div>
-          <div class="Tarjeta">
-            <img src="/TODO EL PROYECTO WEB/Imagenes/Billetera_hombre.png" alt="Billetera para hombre" />
+          <div class="Tarjeta hombre billetera marron">
+            <img src="../Imagenes/Billetera_hombre.png" alt="Billetera para hombre" />
             <h2>Billetera para hombre color marron</h2>
             <h3>Precio:<span class="Precio1">S/139</span></h3>
             <h3>
@@ -143,8 +143,8 @@
               <button><a href="Compra.html">Comprar</a></button>
             </div>
           </div>
-          <div class="Tarjeta">
-            <img src="/TODO EL PROYECTO WEB/Imagenes/Gorro_azul.png" alt="Gorro azul unisex" />
+          <div class="Tarjeta azul gorra hombre mujer">
+            <img src="../Imagenes/Gorro_azul.png" alt="Gorro azul unisex" />
             <h2>Gorro azul unisex</h2>
             <h3>Precio:<span class="Precio1">S/110.90</span></h3>
             <h3>
@@ -158,7 +158,51 @@
             </div>
           </div>
         </div>
-        <button>Mostrar más</button>
+        <div class="tarjetas" id="oculto">
+          <div class="Tarjeta billetera negra hombre">
+            <img src="../Imagenes/billetera_negra_hombre.jpg" alt="Billetera negra" />
+            <h2>Billetera negra para hombre</h2>
+            <h3>Precio:<span class="Precio1">S/95.9</span></h3>
+            <h3>
+              Precio con descuento al registrarse:<span class="Precio2"
+                >S/85.9</span
+              >
+            </h3>
+            <div class="botones">
+              <button><a href="">Agregar al carrito</a></button>
+              <button><a href="Compra.html">Comprar</a></button>
+            </div>
+          </div>
+          <div class="Tarjeta cartera marron mujer">
+            <img src="../Imagenes/cartera_marron.jpg" alt="Bolsa negro mujer" />
+            <h2>Cartera marron</h2>
+            <h3>Precio:<span class="Precio1">S/95.9</span></h3>
+            <h3>
+              Precio con descuento al registrarse:<span class="Precio2"
+                >S/85.9</span
+              >
+            </h3>
+            <div class="botones">
+              <button><a href="">Agregar al carrito</a></button>
+              <button><a href="Compra.html">Comprar</a></button>
+            </div>
+          </div>
+          <div class="Tarjeta bufanda roja mujer">
+            <img src="../Imagenes/bufanda_roja.jpeg" alt="Bufanda roja mujer" />
+            <h2>Bufanda roja para mujer</h2>
+            <h3>Precio:<span class="Precio1">S/95.9</span></h3>
+            <h3>
+              Precio con descuento al registrarse:<span class="Precio2"
+                >S/85.9</span
+              >
+            </h3>
+            <div class="botones">
+              <button><a href="">Agregar al carrito</a></button>
+              <button><a href="Compra.html">Comprar</a></button>
+            </div>
+          </div>
+        </div>
+        <button id="Agregar" onclick="MostrarMasMenos()">Mostrar más</button>
       </section>
       <aside>
         <div class="filtros">
@@ -167,19 +211,19 @@
           <h3>Artículo</h3>
           <div class="seleccionables">
             <div class="boton">
-              <input type="checkbox" /><label>Bufanda</label>
+              <input type="checkbox" class="categoria" value="bufanda" onclick="filtrarProductos()" /><label>Bufanda</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Cartera</label>
+              <input type="checkbox" class="categoria" value="cartera" onclick="filtrarProductos()" /><label>Cartera</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Correa</label>
+              <input type="checkbox" class="categoria" value="correa"  onclick="filtrarProductos()"/><label>Correa</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Gorra</label>
+              <input type="checkbox" class="categoria" value="gorra" onclick="filtrarProductos()"/><label>Gorra</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Billeteras</label>
+              <input type="checkbox" class="categoria" value="billetera" onclick="filtrarProductos()" /><label>Billetera</label>
             </div>
           </div>
         </div>
@@ -187,10 +231,10 @@
           <h3>Genero</h3>
           <div class="seleccionables">
             <div class="boton">
-              <input type="checkbox" /><label>Hombre</label>
+              <input type="checkbox" class="categoria" value="hombre" onclick="filtrarProductos()" /><label>Hombre</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Mujer</label>
+              <input type="checkbox" class="categoria" value="mujer" onclick="filtrarProductos()" /><label>Mujer</label>
             </div>
           </div>
         </div>
@@ -198,16 +242,16 @@
           <h3>Color</h3>
           <div class="seleccionables">
             <div class="boton">
-              <input type="checkbox" /><label>Azul</label>
+              <input type="checkbox" class="categoria" value="azul"  onclick="filtrarProductos()" /><label>Azul</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Negro</label>
+              <input type="checkbox" class="categoria" value="negro" onclick="filtrarProductos()" /><label>Negro</label>
             </div>
             <div class="boton">
-              <input type="checkbox" /><label>Beige</label>
+              <input type="checkbox" class="categoria" value="beige" onclick="filtrarProductos()" /><label>Beige</label>
             </div>
             <div class="boton">
-              <input type="checkbox"><label>Marron</label>
+              <input type="checkbox" class="categoria" value="marron" onclick="filtrarProductos()"><label>Marron</label>
             </div>
           </div>
         </div>
@@ -270,6 +314,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../ArchivoJavaScript/botonMostrarMas.js"></script>
+    <script src="../ArchivoJavaScript/filtroHombreMujer.js"></script>
     </footer>
   </body>
 </html>
