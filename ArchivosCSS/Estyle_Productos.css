@@ -51,10 +51,14 @@ label i {
   color: #ee1d52;
   padding: 10px;
 }
+<<<<<<< HEAD
 #oculto,
 .ocultado {
   display: none;
 }
+=======
+
+>>>>>>> a8197944fb9b5c34cc7b2e943874f6a9ab157035
 .buscador {
   border: none;
   background-image: url("../Imagenes/lupa.jpg");
