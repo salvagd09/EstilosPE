@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/95f1b4897f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <header>
@@ -67,19 +68,13 @@
     <main>
       <h2 class="titulo-carrito">Mi carrito</h2>
       <div class="Contenedor-carrito">
-        <!--Lista de productos (falta)-->
         <div class="lista-producto">
-          <!--Productos-->
-          <div class="Item-producto">
-            <!--Imagen del producto, agregar al .css el diseño-->
-            <div class="Detalle-Producto">
-              <!--Poner el nombre del producto-->
+          <!--Productos mostrados por el Script-->
               <div class="Cantidad">
                 <button>-</button>
                 <input type="text" value="1" readonly />
                 <button>+</button>
               </div>
-              <p><!--Poner el precio--></p>
             </div>
           </div>
           <div class="Descuento">
@@ -89,18 +84,18 @@
               type="text"
               placeholder="Codigo de descuento"
               class="descuento-input"
+              id="input-codigo"
             />
-            <button class="descuento-boton">Verificar</button>
+            <button class="descuento-boton" id="verificar-codigo">Verificar</button>
           </div>
         </div>
         <div class="Resumen-Pedido">
           <h3>Resumen del pedido</h3>
-          <p><!--Se carga todo el contenido refrente al producto--></p>
-          <p>
-            <!--Acá va calcular el envio-->
-            <a href="#">Calcular envío aquí</a>
-          </p>
-          <button>Finalizar compra</button>
+          <p id="nombreProducto"></p>
+          <p id="precioProducto"></p>
+          <p id="totalProducto"><strong>Total:</strong> S/ 0.00</p>
+          <p><a href="#">Calcular envío aquí</a></p>
+          <button id="btn-finalizar">Finalizar compra</button>
         </div>
       </div>
     </main>
@@ -159,5 +154,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../ArchivoJavaScript/mostrarCompra.js"></script>
+    <script src="../ArchivoJavaScript/descuento.js"></script>
+    <script src="../ArchivoJavaScript/finalizar.js"></script>
   </body>
 </html>
