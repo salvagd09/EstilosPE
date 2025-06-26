@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesion</title>
-    <link
-      href="../ArchivosCSS/Iniciar_Sesion.css"
-      rel="stylesheet"
-    />
+    <title>Contactanos</title>
+    <link href="../ArchivosCSS/estilo_Admin.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +17,7 @@
       src="https://kit.fontawesome.com/95f1b4897f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../ArchivosCSS/estilo_Admin.css">
   </head>
   <body>
     <header>
@@ -31,13 +29,16 @@
       <div class="cuadro-busqueda">
         <input placeholder="Realiza tu búsqueda aquí" class="buscador" />
       </div>
-      <h2><a href="Mision_vision.html">Misión y Visión</a></h2>
-      <h2><a href="Nosotros.html">Nosotros</a></h2>
-      <h2><a href="Iniciar_Sesion.html">Iniciar sesión</a></h2>
-      <h2><a href="Registro.html">Registrate</a></h2>
-      <h2><a href="contactanos.html">Contáctanos</a></h2>
-      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      <h2><a href="../ArchivosHtml/Mision_vision.html">Misión y Visión</a></h2>
+      <h2><a href="../ArchivosHtml/Nosotros.html">Nosotros</a></h2>
+      <h2><a href="../ArchivosHtml/Iniciar_Sesion.html">Iniciar sesión</a></h2>
+      <h2><a href="../ArchivosHtml/Registro.html">Registrate</a></h2>
+      <h2><a href="../ArchivosHtml/contactanos.html">Contáctanos</a></h2>
+      <a href="../ArchivosHtml/Compra.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
       <nav>
+        <!-- Este es el menú que sale del costado -->
         <ul class="lista-desplegable">
           <li>
             <div class="ropa">
@@ -48,7 +49,7 @@
           <li>
             <div>
               <i class="fa-solid fa-glasses"></i>
-              <h3><a href="Ventana_ProductoAccesorios.html">Accesorios</a></h3>
+              <h3 href="Ventana_ProductoAccesorios.html"><a>Accesorios</a></h3>
             </div>
           </li>
           <li>
@@ -60,33 +61,34 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Contenedor para centrar el formulario sin afectar el header -->
-    <main>
-      <div class="form-container">
-        <form
-          action="../Archivosphp/conexIniciar_Sesion.php"
-          method="POST"
-          onsubmit="return validarLogin();"
-        >
-          <h2>Login</h2>
-
-          <label for="username">Username</label>
-          <input type="text" id="username" />
-
-          <label for="password">Password</label>
-          <input type="password" id="password" />
-
-          <div class="remember">
-            <p>Recordar</p>
-            <p>Olvide contraseña</p>
-          </div>
-          <input type="submit" class="btn-1" value="Iniciar" />
-        </form>
-      </div>
-    </main>
-    <footer class="footer">
-      <ul class="social-icon">
+  
+        <main class="admin-panel">
+  <h1>Panel de Administrador</h1>
+  <div class="admin-cards">
+    <div class="card">
+      <i class="fa-solid fa-users"></i>
+      <h2>Gestión de Usuarios</h2>
+      <a href="../Archivosphp/ver_usuarios.php">Ver Usuarios</a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-box-open"></i>
+      <h2>Gestión de Productos</h2>
+      <a href="../Archivosphp/ver_productos.php">Ver Productos</a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-comments"></i>
+      <h2>Mensajes</h2>
+      <a href="../Archivosphp/ver_mensajes.php">Ver Mensajes</a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h2>Estadísticas</h2>
+      <a href="#">Ver Estadísticas</a>
+    </div>
+  </div>
+</main>
+     <footer class="footer">
+            <ul class="social-icon">
         <li class="icon-elem">
           <a href="" class="icon">
             <ion-icon name="logo-youtube"></ion-icon>
@@ -126,9 +128,6 @@
         <li class="menu-elem">
           <a href="" class="menu-icon"> Video </a>
         </li>
-        <li class="menu-elem">
-          <a href="" class="menu-icon"> Sobre Nosotros </a>
-        </li>
       </ul>
       <p class="text">2025@Año | Todos los derechos reservados</p>
     </footer>
@@ -140,6 +139,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../ArchivoJavaScript/validacion_Iniciar_sesion.js"></script>
+    <script src="../ArchivoJavaScript/validacionContactanos.js"></script>
+    </footer>
   </body>
 </html>

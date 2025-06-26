@@ -7,7 +7,7 @@
       href="../ArchivosCSS/Estyle_Registro.css"
       rel="stylesheet"
     />
-    <title>Compra</title>
+    <title>Regístrate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,89 +64,76 @@
       </nav>
     </header>
 
-    <main>
-      <section id="registro" class="pestana activa">
-        <form class="form-grid">
-          <div class="campo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoP">Apellido Paterno:</label>
-            <input type="text" id="apellidoP" required />
-          </div>
-          <div class="campo">
-            <label for="apellidoM">Apellido Materno:</label>
-            <input type="text" id="apellidoM" required />
-          </div>
-          <div class="campo">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="campo">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" required />
-          </div>
-          <div class="campo">
-            <label for="confirmar">Confirmar contraseña:</label>
-            <input type="password" id="confirmar" required />
-          </div>
-          <div class="campo">
-            <label for="tipoDocumento">Tipo de documento:</label>
-            <select id="tipoDocumento" required>
-              <option value="">Selecciona</option>
-              <option value="cc">Cédula</option>
-              <option value="ti">Tarjeta</option>
-              <option value="pp">Pasaporte</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="numeroDocumento">N° de documento:</label>
-            <input type="text" id="numeroDocumento" required />
-          </div>
-          <div class="campo">
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" required />
-          </div>
-          <div class="campo">
-            <label for="celular">Número de celular:</label>
-            <input type="tel" id="celular" pattern="[0-9]{10}" required />
-          </div>
-          <div class="campo">
-            <label for="departamento">Departamento:</label>
-            <select id="departamento" required>
-              <option value="">Selecciona</option>
-              <option value="antioquia">Antioquia</option>
-              <option value="cundinamarca">Cundinamarca</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="genero">Género:</label>
-            <div class="genero-opciones">
-              <label
-                ><input
-                  type="radio"
-                  name="genero"
-                  value="hombre"
-                  required
-                />Hombre</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="genero"
-                  value="mujer"
-                  required
-                />Mujer</label
-              >
-            </div>
-          </div>
-          <div class="campo campo-full">
-            <button type="submit">Registrarse</button>
-          </div>
-        </form>
-      </section>
-    </main>
+ <main>
+  <section id="registro" class="pestana activa">
+    <form class="form-grid" action="../Archivosphp/conex_Registro.php" method="POST" >
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="username" required />
+      </div>
+      <div class="campo">
+        <label for="apellidoP">Apellido Paterno:</label>
+        <input type="text" id="apellidoP" name="apellidoP" required />
+      </div>
+      <div class="campo">
+        <label for="apellidoM">Apellido Materno:</label>
+        <input type="text" id="apellidoM" name="apellidoM" required />
+      </div>
+      <div class="campo">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="correo" required />
+      </div>
+      <div class="campo">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="password" required />
+      </div>
+      <div class="campo">
+        <label for="confirmar">Confirmar contraseña:</label>
+        <input type="password" id="confirmar" required />
+      </div>
+      <div class="campo">
+        <label for="tipoDocumento">Tipo de documento:</label>
+        <select id="tipoDocumento" name="tipoDocumento" required>
+          <option value="">Selecciona</option>
+          <option value="cc">Cédula</option>
+          <option value="ti">Tarjeta</option>
+          <option value="pp">Pasaporte</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="numeroDocumento">N° de documento:</label>
+        <input type="text" id="numeroDocumento" name="numeroDocumento" required />
+      </div>
+      <div class="campo">
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" required />
+      </div>
+      <div class="campo">
+        <label for="celular">Número de celular:</label>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{9}" required />
+      </div>
+      <div class="campo">
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento" required>
+          <option value="">Selecciona</option>
+          <option value="lima">Lima</option>
+          <option value="Cuzco">Cuzco</option>
+          <option value="Cajamarca">Cajamarca</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="genero">Género:</label>
+        <div class="genero-opciones">
+          <label><input type="radio" id="generoH" name="genero" value="hombre" required />Hombre</label>
+          <label><input type="radio" id="generoM" name="genero" value="mujer" required />Mujer</label>
+        </div>
+      </div>
+      <div class="campo campo-full">
+        <button type="submit" >Registrarse</button>
+      </div>
+    </form>
+  </section>
+</main>
 
     <footer class="footer">
       <ul class="social-icon">
@@ -198,5 +185,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+     <script src="../ArchivoJavaScript/validacionRegistro.js"></script>
+  </body>
   </body>
 </html>
