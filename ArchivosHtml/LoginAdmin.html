@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/95f1b4897f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../ArchivoJavaScript/validarLoginAdmin.js" defer></script>
   </head>
   <body>
     <div class="imagen"></div>
@@ -25,13 +26,13 @@
       </div>
       <h1>EstilosPE</h1>
       <h2>Area de administracion</h2>
-      ?>
-      <form  method="post" action="Acceder_paginas.php">
-        <?php include("Acceder_paginas.php")?>
+      <div id="oculto"></div>
+      <form id="formulario">
         <label for="usuario">Usuario:</label>
         <input type="text" id="usuario" name="usuario" />
         <label for="contraseña"> Contraseña: </label>
         <input type="password" id="contraseña" name="contraseña" />
+        <i class="fa-solid fa-eye"></i>
         <button type="submit" name="btnIngresar">Ingresar</button>
       </form>
     </div>

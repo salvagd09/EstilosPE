@@ -174,7 +174,7 @@ h2 {
   background-color: white;
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 280px;
   transition: transform 0.2s ease;
@@ -201,8 +201,6 @@ h2 {
   color: #007bff;
   font-weight: bold;
 }
-
-
 /*parte de contactanos*/
 .formulario {
   max-width: 500px;

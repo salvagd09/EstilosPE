@@ -88,3 +88,7 @@ button:hover {
   background-color: #fed9b7;
   font-size: 25px;
 }
+.fa-eye {
+  font-size: 25px;
+  transform: translate(95px, -35px);
+}
