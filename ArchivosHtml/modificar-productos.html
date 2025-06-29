@@ -68,16 +68,21 @@
       <div class="imagen-producto"></div>
       <div class="right">
         <label>Nombre del producto</label>
-        <input type="text" placeholder="Nombre del producto" />
+        <input type="text" id="nombre" placeholder="Nombre del producto" />
 
         <label>Descripción</label>
-        <input type="text" placeholder="Descripción" />
+        <input type="text" id="descripcion" placeholder="Descripción" />
 
         <label>Precio</label>
-        <input type="text" placeholder="Precio" />
+        <input type="text" id="precio" placeholder="Precio" />
 
-        <button>Guardar cambios</button>
+        <button id="guardar-btn">Guardar cambios</button>
+        <p
+          id="error-msg"
+          style="color: red; display: none; margin-top: 10px"
+        ></p>
       </div>
     </div>
+    <script src="../ArchivoJavaScript/validar_Modificar_Productos.js"></script>
   </body>
 </html>
