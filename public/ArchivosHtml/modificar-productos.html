@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar Productos</title>
+    <link rel="stylesheet" href="../ArchivosCSS/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <a class="Titulo" href="Principal.html">Estilos<span>PE</span></a>
+      <div class="cuadro-busqueda">
+        <input placeholder="Realiza tu búsqueda aquí" class="buscador" />
+      </div>
+      <h2><a href="Mision_vision.html">Misión y Visión</a></h2>
+      <h2><a href="Nosotros.html">Nosotros</a></h2>
+      <h2><a href="Iniciar_Sesion.html">Iniciar sesión</a></h2>
+      <h2><a href="Registro.html">Registrate</a></h2>
+      <h2><a href="contactanos.html">Contáctanos</a></h2>
+      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      <nav>
+        <ul class="lista-desplegable">
+          <li>
+            <div class="ropa">
+              <i class="fa-solid fa-shirt"></i>
+              <h3><a href="Ventana_ProductoRopa.html">Ropa</a></h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <i class="fa-solid fa-glasses"></i>
+              <h3><a href="Ventana_ProductoAccesorios.html">Accesorios</a></h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <i class="fa-solid fa-shoe-prints"></i>
+              <h3><a href="Ventana_ProdcutoCalzado.html">Calzado</a></h3>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Modificar Productos</h1>
+      <h2>Escoja el producto</h2>
+      <div class="form-container">
+        <div class="left">
+          <label for="productos">Selecciona un tipo de producto:</label>
+          <select name="productos" id="productos">
+            <!-- Agregué un id -->
+            <option value="">Producto</option>
+            <option value="ropa">Ropa</option>
+            <option value="accesorio">Accesorio</option>
+            <option value="calzado">Calzado</option>
+          </select>
+        </div>
+      </div>
+      <div class="imagen-producto"></div>
+      <div class="right">
+        <label>Nombre del producto</label>
+        <input type="text" id="nombre" placeholder="Nombre del producto" />
+
+        <label>Descripción</label>
+        <input type="text" id="descripcion" placeholder="Descripción" />
+
+        <label>Precio</label>
+        <input type="text" id="precio" placeholder="Precio" />
+
+        <button id="guardar-btn">Guardar cambios</button>
+        <p
+          id="error-msg"
+          style="color: red; display: none; margin-top: 10px"
+        ></p>
+      </div>
+    </div>
+    <script src="../app/ArchivoJavaScript/validar_Modificar_Productos.js"></script>
+  </body>
+</html>
