@@ -1,1 +1,0 @@
-console.log("Es solo un archivo para rellenar la carpeta");
